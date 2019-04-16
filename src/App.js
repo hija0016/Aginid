@@ -1,33 +1,25 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
-const cards = [
-  {
 
-    image: require('./Animation/test3.jpg'),
-  },
-  {
-
-    image: require('./Animation/test3.jpg'),
-  },
-  {
-
-    image: require('./Animation/test3.jpg'),
-  },
-
-];
 export default class App extends Component {
   render() {
     return (
 
-        <View>
-          <DeckSwiper
-            dataSource={cards}
-            renderItem={item =>
-                  <Image style={{ height: 350, flex: 1 }} source={item.image} />
-            }
-          />
-        </View>
+        <View style={styles.container}>
+            <Image
+            style={{width: '100%', height: '100%'}}
+            source={require('./Animation/scene3.gif')}
+            />
+       </View>
     );
   }
 }
+const styles = {
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#ecf0f1',
+    },
+  };
