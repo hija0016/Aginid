@@ -1,51 +1,33 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React, { Component } from 'react';
+import { Image } from 'react-native';
+import { Container, Header, View, DeckSwiper, Card, CardItem, Thumbnail, Text, Left, Body, Icon } from 'native-base';
+const cards = [
+  {
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+    image: require('./Animation/test3.jpg'),
+  },
+  {
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+    image: require('./Animation/test3.jpg'),
+  },
+  {
 
-type Props = {};
-export default class App extends Component<Props> {
+    image: require('./Animation/test3.jpg'),
+  },
+
+];
+export default class App extends Component {
   render() {
     return (
-      <View >
-        <View style={styles.header}></View>
-      </View>
+
+        <View>
+          <DeckSwiper
+            dataSource={cards}
+            renderItem={item =>
+                  <Image style={{ height: 350, flex: 1 }} source={item.image} />
+            }
+          />
+        </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  header: {
-    padding: 50,
-    backgroundColor: '#3b5998'
-  }
-});
