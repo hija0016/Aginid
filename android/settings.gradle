@@ -1,0 +1,3 @@
+rootProject.name = 'Aginid'
+
+include ':app'
