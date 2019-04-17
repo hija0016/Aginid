@@ -3,7 +3,7 @@ import {
     StyleSheet,
     Text,
     View,
-    Image
+    ImageBackground
 } from 'react-native';
   
   import Swiper from 'react-native-swiper';
@@ -16,13 +16,13 @@ import {
     render(){
       return (
         <Swiper style={styles.wrapper} paginationStyle={{position:'absolute', bottom: -50}} showsButtons={false}>
-            <View style={styles.container}>
-            <Image
-            style={{width: '100%', height: '100%'}}
-            source={require('./Animation/scene1+2.gif')}
-            />
-
+            <ImageBackground source={require('./Animation/scene1+2.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
             </View>
+          </ImageBackground>
+                      
+
           <View style={styles.slide2}>
             <Text style={styles.text}>Beautiful</Text>
           </View>
@@ -65,6 +65,7 @@ import {
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: '#ecf0f1',
+
     },
   })
 
