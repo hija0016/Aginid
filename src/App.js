@@ -13,12 +13,16 @@ import {
     componentDidMount() {
       StatusBar.setHidden(true);
     }
+    state = {
+      index: '',
+    }
+   
     render(){
-      return (
-        <Swiper style={styles.wrapper} paginationStyle={{position:'absolute', bottom: -50}} showsButtons={false}>
 
-            {/**scene1+2*/}
-            <ImageBackground source={require('./Animation/scene1+2.gif')} style={{width: '100%', height: '100%'}}>
+      return (
+        <Swiper style={styles.wrapper} paginationStyle={{position:'absolute', bottom: -50}} showsButtons={false} loadMinimal={true}>
+ {/**scene1+2*/}
+ <ImageBackground source={require('./Animation/scene1+2.gif')} style={{width: '100%', height: '100%'}}>
             <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
               <Text>Reginald Bartiana presents </Text>
             </View>
@@ -106,7 +110,6 @@ import {
               <Text>Reginald Bartiana presents </Text>
             </View>
             </ImageBackground>
-  
         </Swiper>
       );
     }

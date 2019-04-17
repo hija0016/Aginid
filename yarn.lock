@@ -6029,6 +6029,11 @@ react-native-easy-grid@0.2.1:
   dependencies:
     lodash "4.17.11"
 
+react-native-fast-image@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-5.2.0.tgz#6730eb06951ea6f9a79abe02a733bc05b7a73412"
+  integrity sha512-S+2gmv9HfLc7CGjjnQ3kO/QoZD9BJnjfwWhsJWgjEvaeOPbpHZaXSUkINSqLcHD5KIHcYidu+U2lgXdEv4Jamg==
+
 react-native-gesture-handler@~1.0.14:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.17.tgz#a046f371f277092157fc2781323d35a02a93daaf"
@@ -6087,6 +6092,13 @@ react-native-svg@8.0.10:
     color "^2.0.1"
     lodash "^4.16.6"
     pegjs "^0.10.0"
+
+react-native-swiper-animated@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/react-native-swiper-animated/-/react-native-swiper-animated-1.5.3.tgz#3c7d029703c0e42b670360872085ebe63d87edde"
+  integrity sha512-LECyD6ay8jelDHXFCU4X1Jz1TzyjTROIaBfw5uGGfaTPtuk3I4AO3/zvQFCc0ALp6IsoWqawWTvTrJNzZdgHQw==
+  dependencies:
+    clamp "^1.0.1"
 
 react-native-swiper@^1.5.14:
   version "1.5.14"
