@@ -16,19 +16,97 @@ import {
     render(){
       return (
         <Swiper style={styles.wrapper} paginationStyle={{position:'absolute', bottom: -50}} showsButtons={false}>
+
+            {/**scene1+2*/}
             <ImageBackground source={require('./Animation/scene1+2.gif')} style={{width: '100%', height: '100%'}}>
             <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
               <Text>Reginald Bartiana presents </Text>
             </View>
-          </ImageBackground>
+            </ImageBackground>
                       
+            {/**scene3*/}
+            <ImageBackground source={require('./Animation/scene3.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
 
-          <View style={styles.slide2}>
-            <Text style={styles.text}>Beautiful</Text>
-          </View>
-          <View style={styles.slide3}>
-            <Text style={styles.text}>And simple</Text>
-          </View>
+            {/**scene4*/}
+            <ImageBackground source={require('./Animation/scene4.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+
+            {/**scene5*/}
+            
+
+            {/**scene6*/}
+            <ImageBackground source={require('./Animation/scene6.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+
+            {/**scene7*/}
+            <ImageBackground source={require('./Animation/scene7.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+
+            {/**scene8*/}
+            <ImageBackground source={require('./Animation/scene8.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+
+            {/**scene9*/}
+            <ImageBackground source={require('./Animation/scene9.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+
+            {/**scene10*/}
+            
+
+            {/**scene11*/}
+            <ImageBackground source={require('./Animation/scene11.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+
+            {/**scene12*/}
+            <ImageBackground source={require('./Animation/scene12.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+
+            {/**scene13*/}
+            <ImageBackground source={require('./Animation/scene13.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+
+            {/**scene14*/}
+            <ImageBackground source={require('./Animation/scene14.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+
+            {/**scene15*/}
+            <ImageBackground source={require('./Animation/scene15.gif')} style={{width: '100%', height: '100%'}}>
+            <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'}}>
+              <Text>Reginald Bartiana presents </Text>
+            </View>
+            </ImageBackground>
+  
         </Swiper>
       );
     }
