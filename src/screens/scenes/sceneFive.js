@@ -20,12 +20,10 @@ export default class SceneFive extends Component {
     }
     render() {
         return (
-              
-                    <View>
-                        {this.image}
-                    </View>
-       
-             
+         
+                <View style={style.Container}>
+                    {this.image}
+                </View>
          
         );
     }
@@ -33,6 +31,6 @@ export default class SceneFive extends Component {
 
 const style = {
     Container:{
-       justifyContent: 'center', alignItems: 'center' 
+        backgroundColor: 'black'
     }
 }

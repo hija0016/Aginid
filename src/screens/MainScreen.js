@@ -12,6 +12,17 @@ import {
   import SceneThree from './scenes/sceneThree';
   import SceneFour from './scenes/sceneFour';
   import SceneFive from './scenes/sceneFive';
+  import SceneSix from './scenes/sceneSix';
+  import SceneSeven from './scenes/sceneSeven';
+  import SceneEight from './scenes/sceneEight';
+  import SceneNine from './scenes/sceneNine';
+  import SceneEleven from './scenes/sceneEleven';
+  import SceneTwelve from './scenes/sceneTwelve';
+  import SceneThirteen from './scenes/sceneThirteen';
+  import SceneFourteen from './scenes/sceneFourteen';
+  import SceneFifteen from './scenes/sceneFifteen';
+
+
   export default class MainScreen extends Component {
     componentDidMount() {
       StatusBar.setHidden(true);
@@ -21,11 +32,20 @@ import {
 
       return (
         <Swiper style={styles.wrapper} paginationStyle={{position:'absolute', bottom: -50}} showsButtons={false}
-        loadMinimal={true} loadMinimalSize={0}>
+        loadMinimal={true} loadMinimalSize={0} loop={false}>
             <SceneOneTwo/>
             <SceneThree/>
             <SceneFour/>
             <SceneFive/>
+            <SceneSix/>
+            <SceneSeven/>
+            <SceneEight/>
+            <SceneNine/>
+            <SceneEleven/>
+            <SceneTwelve/>
+            <SceneThirteen/>
+            <SceneFourteen/>
+            <SceneFifteen/>
         </Swiper>
       );
     }

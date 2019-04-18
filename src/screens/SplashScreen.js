@@ -5,20 +5,18 @@ import { AsyncStorage,View,Text,StatusBar, Image} from 'react-native';
 export default class SplashScreen extends Component {
 
 
-    componentWillMount() {
-    this.image = (
-    <Image source={require('../animation/splash.gif')} style={{width: '100%', height: '100%'}}
-    onLoad={() => this.setState({loading: true})}
-    />);
-    }
+    // async componentWillMount() {
+    // this.image = (
+    
+    // />);
+    // }
+
     async componentDidMount() {
         StatusBar.setHidden(true);
         const data = await this.performTimeConsumingTask();
-      
-        if (this.state.loading == true) {
-            if(data !== null){
-                this.props.navigation.navigate('MainScreen');
-            }
+        
+        if (this.state.loading == true) {         
+            this.props.navigation.navigate('MainScreen');
         }
       }
 
@@ -38,7 +36,8 @@ export default class SplashScreen extends Component {
         return (
          
                 <View style={style.Container}>
-                    {this.image}
+                   <Image source={require('../animation/splash.gif')} style={{width: '100%', height: '100%'}}
+                     onLoad={() => this.setState({loading: true})} /> 
                 </View>
          
         );
@@ -47,6 +46,6 @@ export default class SplashScreen extends Component {
 
 const style = {
     Container:{
-        flex: 1, justifyContent: 'center', alignItems: 'center' 
+        backgroundColor: 'black'
     }
 }

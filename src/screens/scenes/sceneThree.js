@@ -15,9 +15,6 @@ export default class SceneThree extends Component {
     state: {
           loading: 'false'
     }
-
-
-    
     render() {
         return (
          
@@ -31,6 +28,6 @@ export default class SceneThree extends Component {
 
 const style = {
     Container:{
-        flex: 1, justifyContent: 'center', alignItems: 'center' 
+        backgroundColor: 'black'
     }
 }

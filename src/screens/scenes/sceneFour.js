@@ -28,6 +28,6 @@ export default class SceneFour extends Component {
 
 const style = {
     Container:{
-        flex: 1, justifyContent: 'center', alignItems: 'center' 
+        backgroundColor: 'black'
     }
 }
