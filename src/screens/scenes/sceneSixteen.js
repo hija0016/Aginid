@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { AsyncStorage,View,Text,StatusBar, Image} from 'react-native';
 
 
-export default class SceneTen extends Component {
+export default class SceneSixteen extends Component {
 
 
     componentWillMount() {
     this.image = (
-    <Image source={require('../../animation/scene10.gif')} style={{width: '100%', height: '100%'}}
+    <Image source={require('../../animation/scene16.gif')} style={{width: '100%', height: '100%'}}
     onLoad={() => this.setState({loading: true})}
     />);
     }

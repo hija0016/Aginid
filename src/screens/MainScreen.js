@@ -16,11 +16,13 @@ import {
   import SceneSeven from './scenes/sceneSeven';
   import SceneEight from './scenes/sceneEight';
   import SceneNine from './scenes/sceneNine';
+  import SceneNineA from './scenes/sceneNineA';
+  import SceneTen from './scenes/sceneTen';
   import SceneEleven from './scenes/sceneEleven';
   import SceneTwelve from './scenes/sceneTwelve';
-  import SceneThirteen from './scenes/sceneThirteen';
   import SceneFourteen from './scenes/sceneFourteen';
   import SceneFifteen from './scenes/sceneFifteen';
+  import SceneSixteen from './scenes/sceneSixteen';
 
 
   export default class MainScreen extends Component {
@@ -41,11 +43,13 @@ import {
             <SceneSeven/>
             <SceneEight/>
             <SceneNine/>
+            <SceneNineA/>
+            <SceneTen/>
             <SceneEleven/>
             <SceneTwelve/>
-            <SceneThirteen/>
             <SceneFourteen/>
             <SceneFifteen/>
+            <SceneSixteen/>
         </Swiper>
       );
     }

@@ -3,7 +3,12 @@ import { AsyncStorage,View,Text,StatusBar, Image} from 'react-native';
 
 
 export default class SplashScreen extends Component {
-
+    constructor(props) {
+      super(props);
+      this.state = {
+          loading: 'false',
+      };
+    }
 
     // async componentWillMount() {
     // this.image = (
@@ -12,10 +17,9 @@ export default class SplashScreen extends Component {
     // }
 
     async componentDidMount() {
-        StatusBar.setHidden(true);
-        const data = await this.performTimeConsumingTask();
-        
-        if (this.state.loading == true) {         
+        StatusBar.setHidden(true); 
+        const data = await this.performTimeConsumingTask();  
+        if (this.state.loading == true) {       
             this.props.navigation.navigate('MainScreen');
         }
       }
@@ -29,9 +33,6 @@ export default class SplashScreen extends Component {
         );
       }
 
-      state: {
-          loading: 'false'
-      }
     render() {
         return (
          
