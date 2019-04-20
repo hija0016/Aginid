@@ -12,7 +12,7 @@ export default class SceneNineA extends Component {
     />);
     this.text = (
         <View style={{ position: 'absolute', padding: 50, top: 250}}>
-        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
           <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
           An introduction, who is this? A foreign god was introduced to the natives. A baptism was done among the datu and his people. The Spanish arrival also brought Christianity arrival to the people of the Island. A new faith has arrived in the island. The peaceful agreement did not last long.
           </Text>

@@ -13,7 +13,7 @@ export default class SceneTwelve extends Component {
 
     this.text = (
         <View style={{ position: 'absolute', padding: 50, top: 250}}>
-        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
           <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
           The dawn of the battle. Humabon knew that the Spanish crew had no chances at victory against their foes. He motioned to his warriors to stay back from the conflict. 
           </Text>

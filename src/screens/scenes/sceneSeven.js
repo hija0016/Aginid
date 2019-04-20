@@ -18,7 +18,7 @@ export default class SceneSeven extends Component {
     />);
     this.text = (
         <View style={{ position: 'absolute', padding: 50, top: 250}}>
-        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
           <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
           In March of 1521 a group of Spanish explorers arrived with 3 galleon ships. Led by the Portuguese Ferdinand Magellan, the crew went ashore with the slave interpreter Enrique of Malacca whom the local people addressed him as Makiyong.
           </Text>

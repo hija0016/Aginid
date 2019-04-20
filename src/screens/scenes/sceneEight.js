@@ -13,7 +13,7 @@ export default class SceneEight extends Component {
 
     this.text = (
         <View style={{ position: 'absolute', padding: 50, top: 250}}>
-        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
           <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
           An agreement, a pact. The sound of the two blood filled cups signals the sealed the friendship, the treaty of each side.
           </Text>

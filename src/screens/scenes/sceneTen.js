@@ -13,7 +13,7 @@ export default class SceneTen extends Component {
 
     this.text = (
         <View style={{ position: 'absolute', padding: 50, top: 250}}>
-        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
           <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
           Magellan’s crew refused to pay the supposed tribute. They go as far by looting and plundering the island, harassing the woman as islandered gossiped and observed what Magellan’s men continues on such acts.
           </Text>
