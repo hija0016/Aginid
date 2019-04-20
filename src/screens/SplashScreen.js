@@ -18,6 +18,7 @@ export default class SplashScreen extends Component {
 
     async componentDidMount() {
         StatusBar.setHidden(true); 
+        Sound.setCategory('Ambient');
         var whoosh = new Sound('splash.mp3', Sound.MAIN_BUNDLE, (error) => {
           if (error) {
             console.log('failed to load the sound', error);
