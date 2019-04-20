@@ -72,8 +72,9 @@ export default class SceneFive extends Component {
                                     this.pop3
                                 :<View></View>}
                         </View>
-                       {this.text}
+                       
                     </TouchableWithoutFeedback>
+                    {this.text}
                     {/* {this.image}
                     {this.pop2}
                     {this.pop1}
