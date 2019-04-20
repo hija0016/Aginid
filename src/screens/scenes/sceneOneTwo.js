@@ -22,8 +22,8 @@ export default class SceneOneTwo extends Component {
     
     this.text = (
         <View style={{ position: 'absolute', padding: 50, top: 250}}>
-        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
-          <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
+          <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center', fontSize:16}}>
           In the era before the Spanish the island of Sugbo bustled with activity. The sound of gongs reverberated across the town. Trade between the islanders and the merchants continues to flourish as the people who live there pass their tales through song and dance. 
           </Text>
         </View>

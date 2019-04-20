@@ -38,6 +38,16 @@ export default class SceneFive extends Component {
     onLoad={() => this.setState({loading: true})}
     />
     );
+
+    this.text = (
+        <View style={{ position: 'absolute', padding: 50, top: 250}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
+          <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center', fontSize:16}}>
+          Sri Lumay had three sons who spread their influence across the island of Sugbo: Sri Ukob who went north from Consolacion to Bantayan in a region called Nahalin, Sri Alho who went down south towards Carcar until Santander in what was called Sialo, and his youngest son, Sri Bantug who had no sons took over Singhapala, spanning San Nicolas up to Mabolo upon Sri Lumay's passing. He did not have any sons so his nephew, Sri Humabon took over leadership upon his passing.
+          </Text>
+        </View>
+      </View>
+    );
     }
      
     render() {
@@ -64,6 +74,7 @@ export default class SceneFive extends Component {
                         </View>
                        
                     </TouchableWithoutFeedback>
+                    {this.text}
                     {/* {this.image}
                     {this.pop2}
                     {this.pop1}
