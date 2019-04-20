@@ -8,7 +8,8 @@ export default class SceneFive extends Component {
         super(props);
         this.state = {
             loading: 'false',
-            count: []
+            count: [],
+            noOfTap: 0,
         };
       }
 
@@ -39,11 +40,29 @@ export default class SceneFive extends Component {
     />
     );
 
-    this.text = (
+    this.text1 = (
         <View style={{ position: 'absolute', padding: 50, top: 250}}>
-        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
-          <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
-          Sri Lumay had three sons who spread their influence across the island of Sugbo: Sri Ukob who went north from Consolacion to Bantayan in a region called Nahalin, Sri Alho who went down south towards Carcar until Santander in what was called Sialo, and his youngest son, Sri Bantug who had no sons took over Singhapala, spanning San Nicolas up to Mabolo upon Sri Lumay's passing. He did not have any sons so his nephew, Sri Humabon took over leadership upon his passing.
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
+          <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center', fontSize: 15}}>
+          Sri Lumay had three sons who spread their influence across the island of Sugbo: Sri Ukob who went north from Consolacion to Bantayan in a region called Nahalin,
+          </Text>
+        </View>
+      </View>
+    );
+    this.text2 = (
+        <View style={{ position: 'absolute', padding: 50, top: 250}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
+          <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center', fontSize: 15}}>
+          Sri Alho who went down south towards Carcar until Santander in what was called Sialo, and his youngest son, Sri Bantug who had no sons took over Singhapala, spanning San Nicolas up to Mabolo upon Sri Lumay's passing.
+          </Text>
+        </View>
+      </View>
+    );
+    this.text3 = (
+        <View style={{ position: 'absolute', padding: 50, top: 250}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.8, borderRadius: 10}}>
+          <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center', fontSize: 15}}>
+          He did not have any sons so his nephew, Sri Humabon took over leadership upon his passing.
           </Text>
         </View>
       </View>
@@ -74,12 +93,21 @@ export default class SceneFive extends Component {
                         </View>
                        
                     </TouchableWithoutFeedback>
-                    {this.text}
+                    <TouchableWithoutFeedback onPress={()=>this.setState({noOfTap: this.state.noOfTap + 1})}>
+                  {
+                    this.state.noOfTap == 0 ? this.text1 :
+                    this.state.noOfTap == 1 ? this.text2 : 
+                    this.state.noOfTap == 2 ? this.text3 : 
+                    <View></View> 
+                  
+                  }
+                   </TouchableWithoutFeedback>
                     {/* {this.image}
                     {this.pop2}
                     {this.pop1}
                     {this.pop3} */}
                 </View>
+
     
                     
              

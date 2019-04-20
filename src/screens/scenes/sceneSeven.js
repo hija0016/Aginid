@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
-import { AsyncStorage,View,Text,StatusBar, Image} from 'react-native';
+import { AsyncStorage,View,Text,StatusBar, Image, TouchableWithoutFeedback} from 'react-native';
 
 
 export default class SceneSeven extends Component {
-
+    constructor () {
+        super()
+        this.state = {
+          loading: 'false',
+          noOfTap: 0
+         };
+      }
 
     componentWillMount() {
     this.image = (
