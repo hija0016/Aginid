@@ -58,6 +58,7 @@ export default class SceneFourteen extends Component {
 
 const style = {
     Container:{
-        backgroundColor: 'black'
+        backgroundColor: 'black',
+        alignItems: 'center',
     }
 }
