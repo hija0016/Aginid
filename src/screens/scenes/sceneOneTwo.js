@@ -30,7 +30,7 @@ export default class SceneOneTwo extends Component {
       </View>
     );
 
-    his.text2 = (
+    this.text2 = (
       <View style={{ position: 'absolute', padding: 50, top: 250}}>
       <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
         <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
