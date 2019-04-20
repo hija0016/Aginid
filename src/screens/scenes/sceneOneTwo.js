@@ -30,6 +30,16 @@ export default class SceneOneTwo extends Component {
       </View>
     );
 
+    his.text2 = (
+      <View style={{ position: 'absolute', padding: 50, top: 250}}>
+      <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
+        <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
+        Words upon their lips the performers narrate an origin story of the Visayan rulers and its rulers. Through oral tradition using their songs and dances histories and beliefs of the local population were passed down from one generation to the next. The names of past gods and goddesses and the beat of their gongs welcome this ode to their history that glides on like the waves upon the sea.
+        </Text>
+      </View>
+    </View>
+  );
+
     }
 
 
@@ -62,7 +72,7 @@ export default class SceneOneTwo extends Component {
                     {this.image}
                    </Animated.View>
                   {this.text}
-                
+                  {this.text2}
               </View>
               
          
