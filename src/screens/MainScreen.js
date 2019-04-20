@@ -23,9 +23,20 @@ import {
   import SceneFourteen from './scenes/sceneFourteen';
   import SceneFifteen from './scenes/sceneFifteen';
   import SceneSixteen from './scenes/sceneSixteen';
-
+  var Sound = require('react-native-sound');
 
   export default class MainScreen extends Component {
+
+    constructor(props) {
+      super(props);
+      this.state = {
+          loading: 'false',
+          index: 0
+      };
+    
+    }
+
+
     componentDidMount() {
       StatusBar.setHidden(true);
     }
@@ -34,7 +45,7 @@ import {
 
       return (
         <Swiper style={styles.wrapper} paginationStyle={{position:'absolute', bottom: -50}} showsButtons={false}
-        loadMinimal={true} loadMinimalSize={0} loop={false}>
+        loadMinimal={true} loadMinimalSize={0} loop={false} onIndexChanged={(value)=> this.setState({index: value})}>
             <SceneOneTwo/>
             <SceneThree/>
             <SceneFour/>

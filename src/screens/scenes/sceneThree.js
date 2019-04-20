@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { AsyncStorage,View,Text,StatusBar, Image} from 'react-native';
-
+var Sound = require('react-native-sound');
 
 export default class SceneThree extends Component {
 
 
+    
     componentWillMount() {
     this.image = (
     <Image source={require('../../animation/scene3.gif')} style={{width: '100%', height: '100%'}}

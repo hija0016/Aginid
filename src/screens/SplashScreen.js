@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { AsyncStorage,View,Text,StatusBar, Image} from 'react-native';
-
+var Sound = require('react-native-sound');
 
 export default class SplashScreen extends Component {
     constructor(props) {
@@ -18,10 +18,25 @@ export default class SplashScreen extends Component {
 
     async componentDidMount() {
         StatusBar.setHidden(true); 
+        var whoosh = new Sound('splash.mp3', Sound.MAIN_BUNDLE, (error) => {
+          if (error) {
+            console.log('failed to load the sound', error);
+            return;
+          }
+          // loaded successfully
+          console.log('duration in seconds: ' + whoosh.getDuration() + 'number of channels: ' + whoosh.getNumberOfChannels());
+        
+          // Play the sound with an onEnd callback
+          whoosh.play();
+
+        });
         const data = await this.performTimeConsumingTask();  
         if (this.state.loading == true) {       
             this.props.navigation.navigate('MainScreen');
+            whoosh.stop();
         }
+            
+  
       }
 
       performTimeConsumingTask = async() => {

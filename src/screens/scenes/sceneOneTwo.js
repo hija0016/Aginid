@@ -11,23 +11,7 @@ export default class SceneOneTwo extends Component {
     componentDidMount() {
         this.animate()
         
-    var whoosh = new Sound('scene1.wav', Sound.MAIN_BUNDLE, (error) => {
-      if (error) {
-        console.log('failed to load the sound', error);
-        return;
-      }
-      // loaded successfully
-      console.log('duration in seconds: ' + whoosh.getDuration() + 'number of channels: ' + whoosh.getNumberOfChannels());
-    
-      // Play the sound with an onEnd callback
-      whoosh.play((success) => {
-        if (success) {
-          console.log('successfully finished playing');
-        } else {
-          console.log('playback failed due to audio decoding errors');
-        }
-      });
-    });
+  
     }
     
     componentWillMount() {
@@ -39,7 +23,7 @@ export default class SceneOneTwo extends Component {
     this.text = (
         <View style={{ position: 'absolute', padding: 50, top: 250}}>
         <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.9, borderRadius: 10}}>
-          <Text>
+          <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
           In the era before the Spanish the island of Sugbo bustled with activity. The sound of gongs reverberated across the town. Trade between the islanders and the merchants continues to flourish as the people who live there pass their tales through song and dance. 
           </Text>
         </View>
