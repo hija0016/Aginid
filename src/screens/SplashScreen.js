@@ -30,11 +30,11 @@ export default class SplashScreen extends Component {
           whoosh.play();
 
         });
-        const data = await this.performTimeConsumingTask();  
-        if (this.state.loading == true) {       
+        // const data = await this.performTimeConsumingTask();  
+        // if (this.state.loading == true) {       
             this.props.navigation.navigate('MainScreen');
             whoosh.stop();
-        }
+        // }
             
   
       }
