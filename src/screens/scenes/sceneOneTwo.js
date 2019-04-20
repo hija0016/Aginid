@@ -16,13 +16,13 @@ export default class SceneOneTwo extends Component {
     
     componentWillMount() {
     this.image = (
-    <Image resizeMode='cover' source={require('../../animation/scene1+2.gif')} style={{width:'100%', height: '100%'}}
+    <Image resizeMode='cover' source={require('../../animation/scene1and2.gif')} style={{width:'100%', height: '100%'}}
     onLoad={() => this.setState({loading: true})}
     />);
     
     this.text = (
         <View style={{ position: 'absolute', padding: 50, top: 250}}>
-        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.9, borderRadius: 10}}>
+        <View style={{ backgroundColor: 'white', padding: 10, opacity: 0.6, borderRadius: 10}}>
           <Text style={{fontFamily: 'JosefinSans-Regular', textAlign: 'center'}}>
           In the era before the Spanish the island of Sugbo bustled with activity. The sound of gongs reverberated across the town. Trade between the islanders and the merchants continues to flourish as the people who live there pass their tales through song and dance. 
           </Text>
